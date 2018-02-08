@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+              android:layout_marginStart="5dp"
+              android:layout_marginEnd="5dp">
+
+    <LinearLayout
+        android:id="@+id/dialog_registration_phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/dialog_registration_phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_input_phone_number"
+            android:inputType="number"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:maxLength="11"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/dialog_registration_have_car_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_have_car"
+        android:checked="false">
+
+    </CheckBox>
+
+    <LinearLayout
+        android:id="@+id/dialog_registration_input_car_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/dialog_registration_input_car_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:maxLength="6"
+            android:hint="@string/hint_input_car_number_event"
+            android:background="@color/grey_light"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/dialog_registration_input_car_region"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:maxLength="3"
+            android:inputType="number"
+            android:hint="@string/hint_input_car_region_event"
+            android:background="@color/grey_light"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/dialog_registration_input_car_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:maxLength="3"
+            android:inputType="text"
+            android:text="rus"
+            android:hint="@string/hint_input_car_country_event"
+            android:background="@color/grey_light"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:text="@string/hint_pattern_car_number_for_registration_dialog"
+        android:textSize="14sp"/>
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView         xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="com.satir.antievakuator.activities.ReceivedEventActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/donate_status_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/donate_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClickDonate"
+                android:text="@string/donate"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/MyButtonStyle"
+                android:textSize="15sp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onClickRejectDonate"
+                android:text="@string/reject_donate"
+                style="@style/MyButtonStyle"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_received_event_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/activity_received_event_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/car_number"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/activity_received_event_car_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/activity_received_event_photo"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/activity_received_event_map"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

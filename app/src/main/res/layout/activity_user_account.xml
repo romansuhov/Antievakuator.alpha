@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.satir.antievakuator.activities.UserAccountActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/activity_user_account_name"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:gravity="center_horizontal"
+                android:maxLength="15"/>
+
+            <EditText
+                android:id="@+id/activity_user_account_last_name"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:hint="@string/last_name"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal"
+                android:maxLength="25"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/birthday"/>
+
+        <TextView
+            android:id="@+id/activity_user_account_change_birthday_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/change_birthday"
+            android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+        <TextView
+            style="@style/Divider"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/my_cars"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/primary_text"
+            android:gravity="center_horizontal"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_user_account_user_cars_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/activity_user_account_spinner_car_brand"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/activity_user_account_spinner_car_models"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/activity_user_account_input_car_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:maxLength="6"
+                android:hint="@string/hint_input_car_number_event"
+                android:background="@color/grey_light"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/activity_user_account_input_car_region"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:maxLength="3"
+                android:inputType="number"
+                android:hint="@string/hint_input_car_region_event"
+                android:background="@color/grey_light"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/activity_user_account_input_car_country"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="25"
+                android:maxLength="3"
+                android:inputType="text"
+                android:text="rus"
+                android:hint="@string/hint_input_car_country_event"
+                android:background="@color/grey_light"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/activity_user_account_add_car_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/MyButtonStyle"
+            android:text="@string/add_car"
+            android:textSize="13sp"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            style="@style/Divider"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"/>
+
+            <EditText
+                android:id="@+id/activity_user_account_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Divider"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_password"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/old_password"/>
+
+            <EditText
+                android:id="@+id/activity_user_account_old_password"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_password"/>
+
+            <EditText
+                android:id="@+id/activity_user_account_new_password"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:enabled="false"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_user_account_hint_default_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_default_password"
+            android:textSize="10sp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            style="@style/Divider"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="100"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/activity_user_account_save_changes_button"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                style="@style/MyButtonStyle"
+                android:text="@string/save_changes"/>
+
+            <Button
+                android:id="@+id/activity_user_account_delete_account_button"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                style="@style/MyButtonStyle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/delete_account"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

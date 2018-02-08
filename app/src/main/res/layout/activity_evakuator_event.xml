@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/activity_evakuator_event_scroll_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+<LinearLayout
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:layout_margin="10dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/activity_evakuator_event_input_car_number_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:maxLength="6"
+            android:hint="@string/hint_input_car_number_event"
+            android:background="@color/grey_light"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/activity_evakuator_event_input_car_region_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:maxLength="3"
+            android:inputType="number"
+            android:hint="@string/hint_input_car_region_event"
+            android:background="@color/grey_light"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"/>
+
+        <EditText
+            android:id="@+id/activity_evakuator_event_input_car_country_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:maxLength="3"
+            android:inputType="text"
+            android:text="rus"
+            android:hint="@string/hint_input_car_country_event"
+            android:background="@color/grey_light"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_control_point_black_40dp"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:onClick="onClickAddCar"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_evakuator_event_input_car_number_error_text"
+        style="@style/ErrorText"
+        android:text="@string/error_car_number"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_pattern_car_number"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cars_list"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/primary_text"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/activity_evakuator_event_none_cars_error_text"
+        style="@style/ErrorText"
+        android:text="@string/error_none_cars"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/activity_evakuator_event_cars_list_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        style="@style/Divider"/>
+
+    <LinearLayout
+        android:id="@+id/activity_evacuator_event_input_phone_number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/activity_evacuator_event_input_phone_number_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="11"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:inputType="number"
+            android:hint="@string/hint_input_phone_number"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_evakuator_event_input_phone_number_error_text"
+        style="@style/ErrorText"
+        android:text="@string/error_phone_number"/>
+
+    <EditText
+        android:id="@+id/activity_evacuator_event_input_text_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:hint="@string/hint_message_for_car_owner"/>
+
+    <Button
+        android:id="@+id/activity_evakuator_event_send_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_evacuator_event_button"
+        android:layout_gravity="center_horizontal"
+        style="@style/MyButtonStyle"
+        android:textSize="13sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="onClickSendEvakuatorEvent"/>
+
+    <Button
+        android:id="@+id/activity_evakuator_event_remade_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyButtonStyle"
+        android:text="@string/remade_photo"
+        android:onClick="onClickRemadePhoto"
+        android:textSize="13sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        style="@style/Divider"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:id="@+id/activity_evacuator_event_photo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>
+
+</ScrollView>

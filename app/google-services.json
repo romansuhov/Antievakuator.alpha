@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "616552755586",
+    "firebase_url": "https://plasma-moment-159420.firebaseio.com",
+    "project_id": "plasma-moment-159420",
+    "storage_bucket": "plasma-moment-159420.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616552755586:android:f566e5b4b9547b42",
+        "android_client_info": {
+          "package_name": "com.satir.antievakuator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616552755586-1pvp70v56rb14vhm8m4hijq4mjgqoolt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.satir.antievakuator",
+            "certificate_hash": "4c91e98f0d300bcdd11a1de5e1909a5cd201ae6f"
+          }
+        },
+        {
+          "client_id": "616552755586-v8biqap91epcv83k4cbq5qojvjgckak3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz-PNTAV21SMTVokYg8-wnL49H5Eknvl8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616552755586-v8biqap91epcv83k4cbq5qojvjgckak3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
